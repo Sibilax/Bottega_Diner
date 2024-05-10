@@ -6,7 +6,7 @@ function askUserTime() {
 
     if (isNaN(hour) || isNaN(minute) || hour < 0 || hour > 23 || minute < 0 || minute > 59) {
         alert("Invalid entry. Please, add current time (hh:mm):");
-        getUserTime();
+        askUserTime();
     } else {
 
         currentTime = hour + minute / 60; 
@@ -358,7 +358,7 @@ askUserTime();
     
     
                 } else {
-                    alert(`I'm afraid we don't have that. Please choose one of our drinks:\n ${dinnerdrinksOffer}.`);
+                    alert(`I'm afraid we don't have that. Please choose one of our drinks:\n ${dinnerDrinksOffer}.`);
                 }
             }
     
@@ -374,7 +374,7 @@ askUserTime();
                     selectedDessertDinner= chooseDinnerDessert.toUpperCase();
     
                 } else {
-                    alert(`I'm afraid we don't have that. Please choose one of our desserts:\n ${dinnerdessertsOffer}.`);
+                    alert(`I'm afraid we don't have that. Please choose one of our desserts:\n ${dinnerDessertsOffer}.`);
                 }
             }
     
